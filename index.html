@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechMarket</h1>
+        <button id="btn-carrito">🛒</button>
+    </header>
+    <main>
+        <section>
+            <h2>Filtrar productos</h2>
+            <select id="filtro">
+                <option value="todos">Todos</option>
+                <option value="entrada">Entrada</option>
+                <option value="monitores">Monitores</option>
+                <option value="computacion">Computacion</option>
+                <option value="audio">Audio</option>
+                <option value="gaming">Gaming</option>
+            </select>
+        </section>
+        <section>
+            <h2>Compra</h2>
+            <form id="formulario">
+                <input type="text" id="nombre" placeholder="Nombre completo">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Contraseña">
+                <input type="password" id="confirmar" placeholder="Confirmar contraseña">
+                <button type="submit" id="btn-comprar">Comprar</button>
+            </form>
+        </section>
+    </main>
+    <aside id="carrito-lateral">
+        <h2>Tu carrito</h2>
+        <ul id="carrito"></ul>
+        <p>Total: <span id="total">0</span></p>
+        <button id=""cerrar-carrito>Cerrar</button>
+    </aside>
+    <footer>
+        <p>© 2026 . Proyecto Desarrollo Web en Entorno Cliente</p>
+        <p>Cecilia de la Cámara</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
