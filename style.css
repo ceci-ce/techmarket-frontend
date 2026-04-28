@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+body{
+    background: #f1f5f9;
+    color: #737373;
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+header{
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+}
+
+main{
+    max-width: 1100px;
+    margin:auto;
+    padding: 40px 20px;
+    display: grid;
+    gap: 30px;
+}
+
+section {
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#productos div{
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+#productos div:hover{
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.3);
+}
+
+button{
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid white;
+    color: rgb(83, 83, 83);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+#carrito li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#carrito-lateral {
+  position: fixed;
+  top: 0;
+  right: -350px; /* oculto por defecto */
+  width: 320px;
+  height: 100vh;
+  background: #111827;
+  color: white;
+  padding: 20px;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.4);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* cuando está activo */
+#carrito-lateral.activo {
+  right: 0;
+}
+
+#errores {
+  color: #f87171;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.9rem;
+}
